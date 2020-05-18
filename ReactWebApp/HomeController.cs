@@ -21,10 +21,10 @@ namespace ReactWebApp
         }
 
         // GET: /<controller>/
-        public IActionResult Index(int id)
+        public IActionResult Index()
         {
-            BaseRepository baseRepository = _baseRepository.GetById(id);
-            return View(baseRepository);
+              _baseRepository.GetById(id);
+            return View();
 
             
         }

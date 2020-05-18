@@ -27,7 +27,6 @@ namespace ReactWebApp
             services.AddRazorPages();
 
             services.Configure<AppSettings>(options => Configuration.GetSection("Appsetting").Bind(options));
-
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
         }
 

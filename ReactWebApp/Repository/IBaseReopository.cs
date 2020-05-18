@@ -11,5 +11,6 @@ namespace ReactWebApp.Repository
         void Insert(T entity);
         void Update(T entity);
         void Delete(T entity);
+        object GetById(object id);
     }
 }
